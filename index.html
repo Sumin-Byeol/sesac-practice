@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SeSac</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .main-title {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+        margin-top: 0;
+        display: flex; /* Flexbox를 사용하여 내용을 중앙에 배치 */
+        justify-content: center; /* 수평 중앙 정렬 */
+        align-items: center; /* 수직 중앙 정렬 */
+      }
+
+      .main-title img {
+        height: 50px; /* 이미지 높이 설정 */
+        margin-left: 15px; /* 이미지와 텍스트 사이 간격 설정 */
+      }
+
+      .subtitle {
+        text-align: center;
+        font-size: 30px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        background-color: gray;
+        color: gold;
+        font-size: 25px;
+        width: auto;
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        resize: both;
+        overflow: auto;
+      }
+
+      span {
+        display: block;
+        text-align: center;
+      }
+      .main-title img {
+        position: relative; /* 이미지를 relative로 설정 */
+      }
+
+      .main-title img::after {
+        content: ""; /* 가상 요소에 내용을 비워두기 */
+        position: absolute; /* 가상 요소를 절대 위치로 설정 */
+        top: 0; /* 이미지 상단에 맞춤 */
+        left: 0; /* 이미지 왼쪽에 맞춤 */
+        right: 0; /* 이미지 오른쪽에 맞춤 */
+        bottom: 0; /* 이미지 하단에 맞춤 */
+        background-color: white; /* 배경색을 흰색으로 설정 */
+        opacity: 0.5; /* 이미지가 보이도록 투명도 조정 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-title">
+      SeSac
+      <img
+        src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/48068/seedling-emoji-clipart-md.png"
+        alt="SeSac Logo"
+      />
+      <!-- 이미지 태그 추가 -->
+    </div>
+    <div class="subtitle">LLM 화이팅!</div>
+    <p>LLM반 화이팅!</p>
+  </body>
+</html>
